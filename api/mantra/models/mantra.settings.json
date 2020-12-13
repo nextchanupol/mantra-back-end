@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mantras",
+  "info": {
+    "name": "mantra"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "matra_body": {
+      "type": "text",
+      "required": true
+    },
+    "categories": {
+      "via": "mantras",
+      "collection": "category"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mantras",
+      "handler": "mantra.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mantras/count",
+      "handler": "mantra.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mantras/:id",
+      "handler": "mantra.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mantras",
+      "handler": "mantra.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mantras/:id",
+      "handler": "mantra.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mantras/:id",
+      "handler": "mantra.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
